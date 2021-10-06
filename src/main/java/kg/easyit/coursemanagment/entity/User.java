@@ -1,8 +1,6 @@
 package kg.easyit.coursemanagment.entity;
 
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
@@ -11,6 +9,8 @@ import java.util.Date;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Table(name = "tb_user")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class User {

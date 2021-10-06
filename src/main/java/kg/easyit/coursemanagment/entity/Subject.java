@@ -1,11 +1,11 @@
 package kg.easyit.coursemanagment.entity;
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 import javax.persistence.*;
 
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Data
 @Entity
 @Table(name = "tb_subject")

@@ -1,15 +1,14 @@
 package kg.easyit.coursemanagment.entity;
 
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
-
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "tb_course_type")
 @FieldDefaults(level = AccessLevel.PRIVATE)

@@ -1,8 +1,6 @@
 package kg.easyit.coursemanagment.entity;
 
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
@@ -12,6 +10,8 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "tb_mentor")
+@AllArgsConstructor
+@Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Mentor {
     @Id

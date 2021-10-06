@@ -18,7 +18,7 @@ public class ManagerController{
     }
     
     Manager getById() {
-
+        return new Manager();
     }
 
     void delete() {

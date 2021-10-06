@@ -1,5 +1,6 @@
 package kg.easyit.coursemanagment.service;
 
-public interface SubjectService {
+import kg.easyit.coursemanagment.entity.Subject;
 
+public interface SubjectService extends BaseService<Subject>{
 }

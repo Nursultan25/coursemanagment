@@ -1,8 +1,6 @@
 package kg.easyit.coursemanagment.entity;
 
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
@@ -11,6 +9,8 @@ import java.time.LocalTime;
 import java.util.Date;
 
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Data
 @Entity
 @Table(name = "tb_group")
